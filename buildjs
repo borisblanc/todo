@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+:>front/app.js
+for file in `ls front/*.js | grep -v app.js`; do
+    cat $file >> front/app.js
+    echo -e "\n\n" >> front/app.js
+done
+
+echo project has been built
+
+
+
