@@ -7,7 +7,7 @@ var server = http.createServer(function(req, res) {
 	var savefile = "./tasks.json";
 
 	switch(req.url) {
-		case "/app.js":
+		case "/app.js": 
 			filename = 'app.js';
 			break;
 		case '/':
